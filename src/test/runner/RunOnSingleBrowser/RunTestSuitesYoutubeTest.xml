@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run Youtube Test" parallel="tests" thread-count="1">
+    <listeners>
+        <listener class-name="utils.Listener.TestListener"></listener>
+<!--        <listener class-name="utils.Listener.TestRetryAnalyzerListener"></listener>-->
+    </listeners>
+    <!-- Suite for Game Management -->
+    <test name="Google">
+        <classes>
+            <class name="suites.Youtube.Demo"/>
+        </classes>
+    </test>
+</suite>

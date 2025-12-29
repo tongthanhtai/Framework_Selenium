@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run Test Demo - Factory Pattern" parallel="tests" thread-count="4">
+    <listeners>
+        <listener class-name="utils.Listener.TestListener"></listener>
+        <listener class-name="utils.Listener.TestRetryAnalyzerListener"></listener>
+    </listeners>
+
+    <!-- Suite for Account Management -->
+    <test name="Test Chrome">
+        <parameter name="browser" value="CHROME"></parameter>
+        <classes>
+            <class name="suites.Home.TestDemo"/>
+        </classes>
+    </test>
+
+    <test name="Test Firefox">
+        <parameter name="browser" value="FIREFOX"></parameter>
+        <classes>
+            <class name="suites.Home.TestDemo"/>
+        </classes>
+    </test>
+
+</suite>

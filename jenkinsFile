@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    triggers { cron('0 8 * * *') }
+    stages {
+        stage('Run Domain Nbet at 8AM') {
+            steps {
+                sh 'mvn clean test -Pgoogle_test -Dcredentials=prod-credentials-nbet -Denv=prod-env-nbet'
+            }
+        }
+    }
+}
