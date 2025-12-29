@@ -10,8 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import pages.Youtube.GameManagement.CardGamesPage;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

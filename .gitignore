@@ -3,12 +3,14 @@ output/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+**/src/main/**/credentials.json
 
 ### IntelliJ IDEA ###
 .idea/
 *.iws
 *.iml
 *.ipr
+
 
 ### Eclipse ###
 .apt_generated
