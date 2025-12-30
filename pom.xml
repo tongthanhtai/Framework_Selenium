@@ -38,16 +38,10 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.9.2</version>
+            <version>6.3.3</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.10.2</version>
-            <scope>test</scope>
-        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
         <dependency>
@@ -82,13 +76,6 @@
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>properties-maven-plugin</artifactId>
             <version>1.2.1</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.telegram/telegrambots -->
-        <dependency>
-            <groupId>org.telegram</groupId>
-            <artifactId>telegrambots</artifactId>
-            <version>6.9.7.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->

@@ -1,10 +1,8 @@
-package pages.Youtube;
+package pages.Google;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import pages.Youtube.HomeManagement.HomePage;
-
-import java.util.ArrayList;
 
 public class HomePageLogin {
 
