@@ -22,8 +22,8 @@ This is a Selenium-based automation testing framework built with Java and TestNG
     - MAVEN_HOME: apache-maven-3.9.9
 2. Clone the repository:
     ```bash
-   cd FBC3-CheckGameDaily
-   git clone https://github.com/Silver3-Auto-GameDaily/FBC3-CheckGameDaily.git
+   cd framework_java
+   git clone https://github.com/framework_java.git
    
 3. Install the required dependencies:
     ```bash
@@ -85,13 +85,12 @@ base:
   multi-browser: false
   grid: false
   env: 
-    - pro-env-nbet
-    - pro-env-mebet
-    - pro-env-kuc
+    - pro-env-google
+    - pro-env-youtube
     - ...
   credentials: 
     - test-credentials
-    - pro-credentials-nbet
+    - pro-credentials-google
     - ...
 prod-env:
   url: https://www.namebrand.com/
@@ -100,12 +99,12 @@ prod-env:
 ```
 2. Run local and test
     ```bash
-   mvn clean install -Pbrand-nbet -Denv=prod-env-nbet -Dcredentials=test-credentials
+   mvn clean install -Pgoogle -Denv=prod-env-google -Dcredentials=test-credentials
     ```
    
    <b> * Note Argument </b>: <br><br>
-   -Pbrand-nbet: Argument ID in file POM <br>
-   -Denv=prod-env-nbet: Argument env in file yml <br>
+   -Pgoogle: Argument ID in file POM <br>
+   -Denv=prod-env-google: Argument env in file yml <br>
    -Dcredentials=test-credentials: Argument credentials in file yml <br><br>
 
 3. Run appropriate TestSuites xml file (e.g, `RunOnSingleBrowser` package)
